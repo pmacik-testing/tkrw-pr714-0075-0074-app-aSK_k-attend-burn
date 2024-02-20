@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-rgfu
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr714-0075-0074-tenant/tkrw-pr714-0075-0074-app/devfile-sample-rgfu@sha256:5de69057c13b065843e842409866b703ef7175a6cd6149ae147f4de522bf76e4
+        name: my-nodejs
+        resources: {}
+status: {}
